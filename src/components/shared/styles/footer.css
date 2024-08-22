@@ -1,11 +1,12 @@
 .footer-container {
     display: flex;
     /* flex-direction: column; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     width: 1080px;
     min-height: 50vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--txt-body);
     color: var(--bg-body);
+    z-index: 10;
 }

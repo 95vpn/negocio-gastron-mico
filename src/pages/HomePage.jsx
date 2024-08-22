@@ -8,7 +8,7 @@ const HomePage = ({prod }) => {
   return (
     <div className='home-page-container'>
       <h2></h2>
-      <p>At Delicias Caseras, we invite you on a culinary journey full of flavors, aromas, and creativity. From traditional recipes to modern innovations, our platform is designed to inspire chefs of all levels. Whether you are an experienced cook or someone just starting to explore the art of cooking.</p>
+      <p>At Homemade Delights, we invite you on a culinary journey full of flavors, aromas, and creativity. From traditional recipes to modern innovations, our platform is designed to inspire chefs of all levels. Whether you are an experienced cook or someone just starting to explore the art of cooking.</p>
       {
         prod?.map((item, index) => (
           <div key={index}>
