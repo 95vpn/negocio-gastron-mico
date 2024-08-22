@@ -7,13 +7,27 @@ import CatalogoProducts from './pages/CatalogoProducts'
 import ContactoPage from './pages/ContactoPage'
 import CatalogoId from './pages/CatalogoId'
 import HeaderNav from './components/shared/HeaderNav'
+import Footer from './components/shared/Footer'
 
 function App() {
  
 
   return (
-    <>
-     <h1>GASTRONOMIA</h1>
+    <div className='container'>
+      <div class="envoltura">
+                <div></div> 
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
      <HeaderNav/>
      <Routes>
       <Route path='/' element={<HomePage/>}/>
@@ -21,7 +35,8 @@ function App() {
       <Route path='/catalogo-de-productos/:id' element={<CatalogoId/>}/>
       <Route path='/contacto' element={<ContactoPage/>}/>
      </Routes>
-    </>
+     <Footer/>
+    </div>
   )
 }
 

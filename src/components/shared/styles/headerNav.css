@@ -1,0 +1,50 @@
+.header-nav-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.header-nav-container h1:hover{
+    background-color: var(--bg-alt);
+}
+
+.header-nav-container h1:active{
+    color: var(--bg-body);
+}
+
+.header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background: var(--txt-body) radial-gradient(circle, transparent 20%, var(--bg-alt) 20% center/150%);
+    box-shadow: 0 5px 5px;
+}
+
+.header-nav-list-button{
+    background-position: center;
+    transition: background 0s;
+}
+
+.header-nav-list-button:hover{
+    background-color: var(--txt-body);
+    
+}
+
+.header-nav-list-button:active{
+    background-color: var(--bg-body);
+    background-size: 100%;
+    transition: background 0s;
+    color: var(--bg-alt);
+}

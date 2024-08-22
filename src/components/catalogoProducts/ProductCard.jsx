@@ -6,6 +6,7 @@ const ProductCard = ({ prod }) => {
     const palabra = 'Recipes'; 
     const recipe = prod.name === palabra ? prod : null;
 
+
     const handleView = () => {
         if (recipe) {
             navigate(`/catalogo-de-productos/${recipe.name}`, { state: { prod } });
@@ -13,10 +14,10 @@ const ProductCard = ({ prod }) => {
             console.log('Producto no encontrado');
         }
     };
+   
 
     return (
         <>
-        
             {recipe ? (
                 <button onClick={handleView}>{recipe.name}</button>
             ) : (
