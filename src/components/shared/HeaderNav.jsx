@@ -9,7 +9,7 @@ const HeaderNav = () => {
             <nav className='header-nav'>
                 <ul className='header-nav-list'>
                     <button className='header-nav-list-button'><Link to='/catalogo-de-productos'>Products</Link></button>
-                    <button className='header-nav-list-button'><Link to='/contact'>Contact</Link></button>
+                    <button className='header-nav-list-button'><Link to='/contacto'>Contact</Link></button>
                 </ul>
             </nav>
         </div>

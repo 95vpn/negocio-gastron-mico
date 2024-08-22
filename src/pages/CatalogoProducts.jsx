@@ -2,15 +2,20 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductsThunk } from '../store/slices/products.slice';
 import ProductCard from '../components/catalogoProducts/ProductCard';
-import HomePage from './HomePage';
-import HomePageImages from '../components/homePage/HomePageImages';
-import useFetch from '../hooks/useFetch';
+
 
 const CatalogoProducts = () => {
 
-  const products = useFetch();
+  const products = useSelector(store => store.products);
+    const dispatch = useDispatch()
 
-  console.log(products)
+    useEffect(() => {
+        const apiKey = '35dcf687a5aa4e1ca7ee37b2f6a20d96'
+        const url = ` https://api.spoonacular.com/food/search?apiKey=${apiKey}`
+        dispatch(getProductsThunk(url));
+    }, [])
+
+  
 
   return (
     <>

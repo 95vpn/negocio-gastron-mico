@@ -3,6 +3,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    z-index: 10;
 }
 
 .header-nav-container h1:hover{
@@ -30,6 +31,7 @@
 button{
     background: var(--txt-body) radial-gradient(circle, transparent 20%, var(--bg-alt) 20% center/150%);
     box-shadow: 0 5px 5px;
+    color: inherit;
 }
 
 .header-nav-list-button{
@@ -39,7 +41,8 @@ button{
 
 .header-nav-list-button:hover{
     background-color: var(--txt-body);
-    
+    transform:  rotateY(30deg);
+    color: var(--bg-body);
 }
 
 .header-nav-list-button:active{
