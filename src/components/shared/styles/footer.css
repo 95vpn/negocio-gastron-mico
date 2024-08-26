@@ -10,7 +10,7 @@
     background-color: var(--txt-body);
     color: var(--bg-body);
     z-index: 10;
-    
+    margin-top: 500px;
     
 }
 

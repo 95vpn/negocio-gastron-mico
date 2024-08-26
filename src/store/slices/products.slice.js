@@ -12,7 +12,7 @@ export const { setProducts } = productsSlice.actions
 
 export default productsSlice.reducer;
 
-export const getProductsThunk = (url) => (dispatch) => {
+export const getProductsThunk = ( url ) => ( dispatch ) => {
     axios.get(url)
         .then(res => dispatch(setProducts(res.data)))
         .catch(err => console.log(err))
