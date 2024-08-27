@@ -20,7 +20,6 @@ const HomePage = () => {
         <img src="../assets/recipes9.PNG" alt="" />
         <img src="../assets/recipes10.PNG" alt="" />
       </figure>
-      <img src="./" alt="" />
      
     </div>
   )
