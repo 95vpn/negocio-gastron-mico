@@ -11,11 +11,9 @@ const CatalogoProducts = () => {
 
     useEffect(() => {
         const apiKey = '35dcf687a5aa4e1ca7ee37b2f6a20d96'
-        const url = ` https://api.spoonacular.com/food/search?apiKey=${apiKey}`
+        const url = `https://api.spoonacular.com/food/search?apiKey=${apiKey}`
         dispatch(getProductsThunk(url));
     }, [])
-
-  
 
   return (
     <>
@@ -31,8 +29,6 @@ const CatalogoProducts = () => {
           ))
         }
       </section>
-      
-
     </>
   )
 }
